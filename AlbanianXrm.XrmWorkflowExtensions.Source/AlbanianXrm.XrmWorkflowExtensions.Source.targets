@@ -1,0 +1,17 @@
+<Project>
+	<ItemGroup>
+		<Compile Include="$(MSBuildThisFileDirectory)**\*.cs" />
+		<Compile Update="$(MSBuildThisFileDirectory)WorkflowBase.IContext.cs">
+			<DependentUpon>WorkflowBase.cs</DependentUpon>
+		</Compile>
+		<Compile Update="$(MSBuildThisFileDirectory)WorkflowBase.Context.cs">
+			<DependentUpon>WorkflowBase.cs</DependentUpon>
+		</Compile>
+		<Compile Update="$(MSBuildThisFileDirectory)WorkflowBase.IArguments.cs">
+			<DependentUpon>WorkflowBase.cs</DependentUpon>
+		</Compile>
+		<Compile Update="$(MSBuildThisFileDirectory)WorkflowBase.Arguments.cs">
+			<DependentUpon>WorkflowBase.cs</DependentUpon>
+		</Compile>
+	</ItemGroup>
+</Project>

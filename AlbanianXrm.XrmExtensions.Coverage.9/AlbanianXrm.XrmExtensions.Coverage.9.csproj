@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.Source.props" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<AlbanianXrm-Coverage-Enable Condition="'$(Configuration)' == 'Coverage'">True</AlbanianXrm-Coverage-Enable>
+		<AlbanianXrm-Coverage-Enable Condition="'$(Configuration)' != 'Coverage'">False</AlbanianXrm-Coverage-Enable>
+		<TargetFrameworks>net462</TargetFrameworks>
+		<Configurations>Debug;Release;Coverage</Configurations>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MSBuild.AlbanianXrm.Coverage" Version="1.2021.2.4" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AlbanianXrm.XrmPluginExtensions.9.Tests\AlbanianXrm.XrmPluginExtensions.9.Tests.csproj">
+			<AlbanianXrm-Coverage-Filter>+[AlbanianXrm.XrmPluginExtensions]* -[AlbanianXrm.XrmPluginExtensions.9.Tests]*</AlbanianXrm-Coverage-Filter>
+		</ProjectReference>
+		<ProjectReference Include="..\AlbanianXrm.XrmWorkflowExtensions.9.Tests\AlbanianXrm.XrmWorkflowExtensions.9.Tests.csproj">
+			<AlbanianXrm-Coverage-Filter>+[AlbanianXrm.XrmWorkflowExtensions]* -[AlbanianXrm.XrmWorkflowExtensions.9.Tests]*</AlbanianXrm-Coverage-Filter>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

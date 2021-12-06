@@ -1,0 +1,6 @@
+<Project>
+	<ItemGroup>
+		<Compile Include="..\AlbanianXrm.XrmExtensions.Source.Tests\FakeXrmEasyTestsBase.cs" />
+		<Compile Include="$(MSBuildThisFileDirectory)**\*.cs" />
+	</ItemGroup>
+</Project>

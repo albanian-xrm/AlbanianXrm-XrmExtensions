@@ -1,0 +1,11 @@
+<Project>
+	<ItemGroup>
+		<Compile Include="$(MSBuildThisFileDirectory)**\*.cs" />
+		<Compile Update="$(MSBuildThisFileDirectory)PluginBase.IContext.cs">
+			<DependentUpon>PluginBase.cs</DependentUpon>
+		</Compile>
+		<Compile Update="$(MSBuildThisFileDirectory)PluginBase.Context.cs">
+			<DependentUpon>PluginBase.cs</DependentUpon>
+		</Compile>
+	</ItemGroup>
+</Project>
