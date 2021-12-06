@@ -33,6 +33,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CBE623A9-D182-45F1-AD28-1281ACF60967}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36518339-3594-425D-A86C-B977504921A1}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v8", "v8", "{CC7D0AA2-ACFE-4974-9CB8-D46CDF901769}"
 EndProject
