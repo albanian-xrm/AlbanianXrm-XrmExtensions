@@ -10,17 +10,17 @@ namespace AlbanianXrm.XrmExtensions
         private readonly string workflowName;
         public const string Target = "Target";
 
-        public WorkflowBase()
+        protected WorkflowBase()
         {
             workflowName = GetType().Name;
         }
 
-        protected override void Execute(CodeActivityContext codeActivityContext)
+        protected override void Execute(CodeActivityContext context)
         {
-            var context = new Context(codeActivityContext);
+            var codeActivityContext = new Context(context);
             try
             {
-                Execute(context);
+                Execute(codeActivityContext);
             }
             catch (FaultException<OrganizationServiceFault> ex)
             {
@@ -28,7 +28,7 @@ namespace AlbanianXrm.XrmExtensions
             }
             catch (Exception ex)
             {
-                context.TracingService.Trace("{0}: {1}", workflowName, ex.ToString());
+                codeActivityContext.TracingService.Trace("{0}: {1}", workflowName, ex.ToString());
                 throw;
             }
         }

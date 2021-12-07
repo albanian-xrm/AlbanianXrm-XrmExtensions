@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace AlbanianXrm.XrmExtensions.Queries
 {
-    public class TimeZoneDefinitionQueries
+    public static class TimeZoneDefinitionQueries
     {
         public const string USER_DOES_NOT_EXIST = "User with Id='{0}' does not exist";
         public static string GetTimezoneByUserId(Guid userId, IOrganizationService service)

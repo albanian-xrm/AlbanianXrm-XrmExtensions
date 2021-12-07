@@ -4,7 +4,7 @@ namespace AlbanianXrm.XrmExtensions
 {
     public partial class WorkflowBase
     {
-        private class Arguments : IArguments
+        private sealed class Arguments : IArguments
         {
             private readonly CodeActivityContext codeActivityContext;
 

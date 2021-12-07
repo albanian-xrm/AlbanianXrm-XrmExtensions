@@ -8,7 +8,7 @@ namespace AlbanianXrm.XrmExtensions
     {  
         private readonly string pluginName;
 
-        public PluginBase()
+        protected PluginBase()
         {
             pluginName = GetType().FullName;
         }
