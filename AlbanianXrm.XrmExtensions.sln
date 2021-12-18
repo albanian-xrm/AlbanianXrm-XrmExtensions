@@ -13,17 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.XrmPluginExtens
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{24408734-5B4B-43C7-B0D5-77D400DC0655}"
 	ProjectSection(SolutionItems) = preProject
-		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.Source.props = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.Source.props
-		AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.props = AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.props
-		AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.props = AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.props
+		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.props = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.props
+		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.props = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{F6844B9A-A669-4566-95DE-BAED5A7D6237}"
 	ProjectSection(SolutionItems) = preProject
-		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.Source.targets = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.Source.targets
-		AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.targets = AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.targets
-		AlbanianXrm.XrmPluginExtensions.Source.Tests\AlbanianXrm.XrmPluginExtensions.Source.Tests.targets = AlbanianXrm.XrmPluginExtensions.Source.Tests\AlbanianXrm.XrmPluginExtensions.Source.Tests.targets
-		AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.targets = AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.targets
+		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets
+		AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.targets = AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.targets
+		AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.targets = AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.targets
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.XrmWorkflowExtensions.8", "AlbanianXrm.XrmWorkflowExtensions.8\AlbanianXrm.XrmWorkflowExtensions.8.csproj", "{238D5B68-4ED7-403C-B505-1AF26C186D13}"
@@ -43,6 +41,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v9", "v9", "{95E56713-CF1A-4B87-A749-43DBCCBBE95B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{0DEBECF6-F799-48E5-A1E5-15B47B7BC6DA}"
+	ProjectSection(SolutionItems) = preProject
+		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.nuspec = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.nuspec
+		AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.nuspec = AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.nuspec
+		AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.8.nuspec = AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.8.nuspec
+		AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.9.nuspec = AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.9.nuspec
+		AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.8.nuspec = AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.8.nuspec
+		AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.9.nuspec = AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.9.nuspec
+		NuGetPack.ps1 = NuGetPack.ps1
+		NuGetPush.ps1 = NuGetPush.ps1
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.XrmPluginExtensions.8.Tests", "AlbanianXrm.XrmPluginExtensions.8.Tests\AlbanianXrm.XrmPluginExtensions.8.Tests.csproj", "{381F0CBB-F4F4-4CF7-AD6F-CDFF575AE680}"
 EndProject
@@ -59,6 +67,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.XrmWorkflowExtensions.8.Tests", "AlbanianXrm.XrmWorkflowExtensions.8.Tests\AlbanianXrm.XrmWorkflowExtensions.8.Tests.csproj", "{342F653D-6426-4FEB-8A69-2CF93C097024}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.XrmWorkflowExtensions.9.Tests", "AlbanianXrm.XrmWorkflowExtensions.9.Tests\AlbanianXrm.XrmWorkflowExtensions.9.Tests.csproj", "{8646F01C-C9A9-4BDD-9D29-7F3CE0BDD13B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{BC2DA367-BA9D-4089-A23F-BCF45512082B}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet-desktop.yml = .github\workflows\dotnet-desktop.yml
+		.github\workflows\nuget-push.yml = .github\workflows\nuget-push.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -163,6 +177,7 @@ Global
 		{B130B4BF-485F-4271-976C-09C68B3840F3} = {95E56713-CF1A-4B87-A749-43DBCCBBE95B}
 		{342F653D-6426-4FEB-8A69-2CF93C097024} = {CC7D0AA2-ACFE-4974-9CB8-D46CDF901769}
 		{8646F01C-C9A9-4BDD-9D29-7F3CE0BDD13B} = {95E56713-CF1A-4B87-A749-43DBCCBBE95B}
+		{BC2DA367-BA9D-4089-A23F-BCF45512082B} = {36518339-3594-425D-A86C-B977504921A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B957C3E-0F03-4935-B9EE-DCF1C3B0FF4B}

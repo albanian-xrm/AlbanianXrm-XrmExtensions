@@ -1,0 +1,36 @@
+name: Publish to Nuget
+
+on:
+  push:
+    tags:
+    - "v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  build:
+    runs-on: windows-latest 
+
+    env:
+      Configuration: Debug
+      Solution_Name: AlbanianXrm.XrmExtensions.sln            
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Verify commit exists in origin/main
+      run: |
+        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+        git branch --remote --contains | grep origin/main
+
+    - name: Set VERSION variable from tag
+      run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+    - name: Build and analyze
+      env:
+        NUGET_APIKEY: ${{ secrets.NUGET_APIKEY }}
+        VERSION: ${{ env.VERSION }}
+      shell: powershell
+      run: |
+        .\NuGetPack.ps1 -PackageVersion $env:VERSION
+        .\NuGetPush.ps1 -ApiKey "$env:NUGET_APIKEY"
+        

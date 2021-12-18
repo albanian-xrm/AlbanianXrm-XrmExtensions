@@ -1,0 +1,7 @@
+<Project>
+	<PropertyGroup>
+		<CRMSDK_MAJOR Condition="'$(CRMSDK_MAJOR)'==''">8</CRMSDK_MAJOR>
+		<DefineConstants Condition="'$(DefineConstants)'==''">CRMSDK_$(CRMSDK_MAJOR)</DefineConstants>
+		<DefineConstants Condition="'$(DefineConstants)'!=''">CRMSDK_$(CRMSDK_MAJOR);$(DefineConstants)</DefineConstants>
+	</PropertyGroup>
+</Project>

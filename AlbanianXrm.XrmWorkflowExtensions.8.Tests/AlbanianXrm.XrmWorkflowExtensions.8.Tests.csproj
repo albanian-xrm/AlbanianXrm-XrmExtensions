@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source.Tests\AlbanianXrm.XrmWorkflowExtensions.Source.Tests.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.props" />
 	<PropertyGroup>
 		<TargetFramework>net452</TargetFramework>
 		<RootNamespace>AlbanianXrm.WorkflowExtensionsTests</RootNamespace>

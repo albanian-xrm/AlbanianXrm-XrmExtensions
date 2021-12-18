@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.props" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -14,12 +14,10 @@
 		<PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="8.2.0.1" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\AlbanianXrm.XrmExtensions.8\AlbanianXrm.XrmExtensions.8.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 	  <Reference Include="System.ServiceModel">
 	    <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
-	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.targets" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets" />
+	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.targets" />
 </Project>

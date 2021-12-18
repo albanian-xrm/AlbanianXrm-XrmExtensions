@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>AlbanianXrm.XrmWorkflowExtensions.8</id>
+		<version>$version$</version>
+		<title>AlbanianXrm XrmWorkflowExtensions</title>
+		<authors>Betim Beja;AlbanianXrm</authors>
+		<owners>AlbanianXrm</owners>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/albanian-xrm/AlbanianXrm-XrmExtensions</projectUrl>
+		<repository type="git" url="https://github.com/albanian-xrm/AlbanianXrm-XrmExtensions.git" />
+		<icon>images\Logo_80x80.png</icon>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Common extension for Microsoft Dataverse Plugins.</description>
+		<releaseNotes>
+			v$version$:
+			- WorkflowBase
+		</releaseNotes>
+		<copyright>Copyright 2021</copyright>
+		<tags>XrmToolBox Xrm AlbanianXrm EarlyBound</tags>
+		<dependencies>
+			<dependency id="AlbanianXrm.XrmExtensions.8" version="$version$" />
+			<dependency id="Microsoft.CrmSdk.Workflow" version="[8.2.0.1,9)" />
+		</dependencies>
+		<frameworkAssemblies>
+			<frameworkAssembly assemblyName="System.Activities"  />
+			<frameworkAssembly assemblyName="System.ServiceModel"  />
+		</frameworkAssemblies>
+	</metadata>
+	<files>
+		<file src="..\Logo_80x80.png" target="images" />
+		<file src="AlbanianXrm.XrmWorkflowExtensions.targets" target="build\AlbanianXrm.XrmWorkflowExtensions.8.targets" />
+		<file src="*.cs" target="build\" />
+	</files>
+</package>

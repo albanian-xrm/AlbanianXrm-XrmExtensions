@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.8.props" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,14 +8,10 @@
 		<AssemblyName>AlbanianXrm.XrmWorkflowExtensions</AssemblyName>
 		<RootNamespace>AlbanianXrm.XrmWorkflowExtensions</RootNamespace>
 		<TargetFrameworks>net452</TargetFrameworks>
-		<CRMSDK_MAJOR>8</CRMSDK_MAJOR>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net452'">
 		<PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="8.2.0.1" />
 		<PackageReference Include="Microsoft.CrmSdk.Workflow" Version="8.2.0.1" />
-	</ItemGroup>
-	<ItemGroup>
-	  <ProjectReference Include="..\AlbanianXrm.XrmExtensions.8\AlbanianXrm.XrmExtensions.8.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Reference Include="System.Activities" />
@@ -23,5 +19,6 @@
 	    <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
-	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.targets" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets" />
+	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.targets" />
 </Project>

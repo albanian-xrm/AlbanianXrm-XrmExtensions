@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source.Tests\AlbanianXrm.XrmPluginExtensions.Source.Tests.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.props" />
 	<PropertyGroup>
 		<TargetFramework>net462</TargetFramework>
 		<RootNamespace>AlbanianXrm.PluginExtensionsTests</RootNamespace>

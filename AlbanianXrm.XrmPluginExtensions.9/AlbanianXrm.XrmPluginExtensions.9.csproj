@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.props" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,19 +8,16 @@
 		<AssemblyName>AlbanianXrm.XrmPluginExtensions</AssemblyName>
 		<RootNamespace>AlbanianXrm.XrmPluginExtensions</RootNamespace>
 		<TargetFrameworks>net462</TargetFrameworks>
-		<CRMSDK_MAJOR>9</CRMSDK_MAJOR>
 		<Configurations>Debug;Release;Coverage</Configurations>
 	</PropertyGroup>	
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
 		<PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.42" />
 	</ItemGroup>	
 	<ItemGroup>
-	  <ProjectReference Include="..\AlbanianXrm.XrmExtensions.9\AlbanianXrm.XrmExtensions.9.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 	  <Reference Include="System.ServiceModel">
 	    <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
-	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.Source.targets" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets" />
+	<Import Project="..\AlbanianXrm.XrmPluginExtensions.Source\AlbanianXrm.XrmPluginExtensions.targets" />
 </Project>

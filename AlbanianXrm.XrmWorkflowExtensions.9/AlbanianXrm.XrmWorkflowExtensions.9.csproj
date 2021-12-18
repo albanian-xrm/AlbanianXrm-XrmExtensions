@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.props" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.9.props" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -15,13 +15,11 @@
 		<PackageReference Include="Microsoft.CrmSdk.Workflow" Version="9.0.2.42" />
 	</ItemGroup>	
 	<ItemGroup>
-	  <ProjectReference Include="..\AlbanianXrm.XrmExtensions.9\AlbanianXrm.XrmExtensions.9.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 	  <Reference Include="System.Activities" />
 	  <Reference Include="System.ServiceModel">
 	    <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
-	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.Source.targets" />
+	<Import Project="..\AlbanianXrm.XrmExtensions.Source\AlbanianXrm.XrmExtensions.targets" />
+	<Import Project="..\AlbanianXrm.XrmWorkflowExtensions.Source\AlbanianXrm.XrmWorkflowExtensions.targets" />
 </Project>

@@ -1,5 +1,0 @@
-<Project>
-	<PropertyGroup>
-		<CRMSDK_MAJOR Condition="'$(CRMSDK_MAJOR)'==''">9</CRMSDK_MAJOR>
-	</PropertyGroup>
-</Project>
